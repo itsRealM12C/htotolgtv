@@ -1,0 +1,20 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<center>
+How to open toast on LG TV?
+<p>
+1. Make sure you have webOS Dev Manager app or mobile telnet if you on android.
+<p>
+2. On mobile telnet, click 3 dot on top right corner, and click telnet settings, and make sure to enter your TV's ip and the port is 23, and save it, and click 3 dot on corner again, and click connect.
+
+But if you on PC, laptop, open webOS Dev Manager, make sure to add new device, and enter TV's IP and passphrase (if your TV is not rooted), but if your TV is rooted, then the username is root, and the password is alpine.
+Then, if you done, click the little telnet icon on left side, and enter the following command:
+</p>
+luna-send-pub -f -n 1 luna://com.webos.notification/createToast '{
+	"message": "Test notification.",
+	"iconUrl":"/usr/palm/notificationmgr/images/toast-notification-icon.png"}'
+<p>
+3. Clicking Send it makes toast appear.
+
+For example:
+</center>
+<img src="https://github.com/itsRealM12C/htotolgtv/blob/main/kmc_20250102_183328.png?raw=true" width="670" height="380">
