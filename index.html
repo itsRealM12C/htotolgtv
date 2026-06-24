@@ -13,6 +13,10 @@ luna-send-pub -f -n 1 luna://com.webos.notification/createToast '{
 	"message": "Test notification.",
 	"iconUrl":"/usr/palm/notificationmgr/images/toast-notification-icon.png"}'
 <p>
+	Toast in old UI layout (not new) on webOS 7
+	<p>luna-send -n 1 luna://com.webos.notification/createToast \
+'{ "sourceId": "com.webos.service.tv", "message": "Test notification.", "iconUrl": "/usr/palm/notificationmgr/images/toast-notification-icon.png", "noaction": false, "type": "light", "opacity": 1, "stale": false, "persistent": false }'
+</p>
 3. Clicking Send it makes toast appear.
 
 For example:
